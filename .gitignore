@@ -1,3 +1,6 @@
-.gitignore
 node_modules
 .env
+build
+package-lock.json
+README.md
+.gitignore
