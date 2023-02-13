@@ -43,7 +43,7 @@ const Sidebar = () => {
                         </ListItem>
                         <ListItem disablePadding>
                             <ListItemButton>
-                                <Typography><Link to={'/about'} style={{textDecoration: 'none', color: '#000'}}>Page</Link></Typography>
+                                <Typography><Link to={'/'} style={{textDecoration: 'none', color: '#000'}}>Page</Link></Typography>
                             </ListItemButton>
                         </ListItem>
                         <ListItem disablePadding sx={{position: 'absolute', bottom: 0}}>

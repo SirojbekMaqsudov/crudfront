@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import {
     Box,
     Button,
@@ -43,7 +43,7 @@ const style = {
 const EditUser = ({open, handleClose, selection, setSelection}) => {
     const id = selection[0]
     const [user, setUser] = useState({...IUser})
-    const {data, refetch, isLoading: getUserLoading} = useQuery('user', () => $host.get(`${process.env.REACT_APP_API_URL}/users/${id}`), {
+    const {isLoading: getUserLoading} = useQuery('user', () => $host.get(`${process.env.REACT_APP_API_URL}/users/${id}`), {
         onSuccess: ({data}) =>  {
             const {error} = data
             if (error) {

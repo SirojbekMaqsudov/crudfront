@@ -4,7 +4,7 @@ import {toast, ToastContainer} from "react-toastify";
 import {ToastOption} from "../utils/ToastOptions";
 import useAuth from "../utils/useAuth";
 import {useNavigate} from 'react-router-dom'
-import {Avatar, Box, Button, Container, FormControlLabel, Grid, Link, TextField, Typography} from "@mui/material";
+import {Avatar, Box, Button, CircularProgress, Container, TextField, Typography} from "@mui/material";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLock} from "@fortawesome/free-solid-svg-icons";
 
@@ -94,7 +94,7 @@ const Login = () => {
                             variant="contained"
                             sx={{ mt: 3, mb: 2 }}
                         >
-                            Sign In
+                            Sign in
                         </Button>
                     </Box>
                 </Box>
