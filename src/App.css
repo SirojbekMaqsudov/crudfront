@@ -1,0 +1,30 @@
+body {
+    background: #EDEDED;
+}
+
+* {
+    font-family: 'Urbanist', sans-serif;
+}
+
+.CrudTable {
+    width: 100%;
+}
+
+.Forbidden {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.SidebarToggle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.SidebarToggle button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
