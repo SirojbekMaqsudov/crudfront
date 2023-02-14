@@ -5,7 +5,7 @@ const RequireAuth = ({allowRole}) => {
     const {auth} = useAuth()
 
     return (
-        auth?.user?.role === allowRole ? <Outlet /> : auth?.user ? <div className='Forbidden'><h1>Forbidden</h1></div> : <Navigate to={'/login'} />
+        auth?.user?.role === allowRole ? <Outlet /> : auth?.user ? <div className='Forbidden'><a href='/logout'>Forbidden</h1></a> : <Navigate to={'/login'} />
     )
 }
 
